@@ -4,13 +4,89 @@
 
 body {
   font-family: type.$font;
-  background-color: var.$bg-very-light;
+  background-color: var(--green-2);
   width: min(100% - 2rem, 60ch);
   margin-inline: auto;
   margin-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--size-3); 
+  min-height: 100vh;
 }
 
 h1 {
   color: var.$primary-color;
   text-align: center;
 }
+
+.page-content {
+  width: 80%; 
+  max-width: 800px; 
+  margin: 0 auto;
+  text-align: center; 
+  padding: var(--size-6);
+  background-color: var(--gray-2); 
+  box-shadow: var(--shadow-4); 
+  border-radius: var(--radius-4); 
+  margin: var(--size-4) auto;
+  line-height: var(--line-4); 
+}
+
+.poem__title {
+  font-size: var(--font-size-6); 
+  margin-bottom: var(--size-2);
+}
+
+.poem__author {
+  font-size: var(--font-size-2);
+  color: black;
+  margin-bottom: var(--size-3);
+}
+
+
+.poem__text {
+  line-height: 1.6; 
+  margin: 20px 0;
+}
+
+.poem__text p {
+  font-size: var(--font-size-2);
+  margin-bottom: var(--size-1);
+  color: var(--black-10); 
+}
+
+.page-footer {
+  margin-top: var(--size-6);
+  font-size: var(--font-size-2);
+  color: var(--gray-8);
+  text-align: center;
+  background-color: var(--gray-2); 
+  box-shadow: var(--shadow-6); 
+  border-radius: var(--radius-4); 
+  margin: var(--size-4) auto;
+  line-height: var(--line-4);
+}
+
+.page-footer__resources a {
+  color: var(--purple-8);
+  text-decoration: underline;
+}
+
+// Accessbility for different screen sizes
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: var(--size-3);
+  }
+
+  .poem__text p {
+    font-size: var(--font-size-4); /* Smaller font on smaller screens */
+  }
+
+  .poem__title {
+    font-size: var(--font-size-5);
+  }
+}
+

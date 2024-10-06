@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A modern CSS page">
-    <meta name="generator" content="Eleventy v1.2" />
-    <title>IDMX 11ty Sass Starter</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-  <h1>IDMX 11ty Sass Starter</h1>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sapiente corrupti, maxime eos, nostrum corporis neque pariatur nam rem at mollitia delectus, debitis laboriosam sed quam hic dolore! Obcaecati, necessitatibus.</p>
-  <script src="js/index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern CSS page">
+  <meta name="generator" content="Eleventy v1.2">
+  <title>Our Nature - Poem Page</title>
+  <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+  <link rel="icon" type="image/svg+xml" href="src/images/favicon.svg">
+  <!-- the props -->
+  <link rel="stylesheet" href="https://unpkg.com/open-props" />
+  <!-- optional imports that use the props -->
+  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <main class="page-content">
+    <article class="poem">
+      <h2 class="poem__title">Our Nature</h2>
+      <p class="poem__author">By Rae Armantrout</p>
+      <img class="hero-figure__image" width="900" height="1355" src="./images/nature-picture.png" alt="a river between mountains">
+      <section class="poem__text">
+        <p>The very flatness</p>
+        <p>of portraits</p>
+        <p>makes for nostalgia</p>
+        <p>in the connoisseur.</p>
+        <p>Here's the latest</p>
+        <p>little lip of wave</p>
+        <p>to flatten</p>
+        <p>and spread thin.</p>
+        <p>Let's say</p>
+        <p>it shows our recklessness,</p>
+        <p>our fast gun,</p>
+        <p>our self-consciousness</p>
+        <p>which was really</p>
+        <p>our infatuation</p>
+        <p>with our own fame,</p>
+        <p>our escapes,</p>
+        <p>the easy way</p>
+        <p>we'd blend in</p>
+        <p>with the peasantry,</p>
+        <p>our loyalty</p>
+        <p>to our old gang</p>
+        <p>from among whom</p>
+        <p>it was our nature</p>
+        <p>to be singled out.</p>
+      </section>
+    </article>
+
+    
+  </main>
+
+  <footer class="page-footer">
+    <section class="page-footer__sources">
+      <p>Poem: Public Domain</p>
+      <p>Image: <a href="https://unsplash.com/photos/river-between-mountains-under-white-clouds-zMV7sqlJNow">Kimon
+          Maritz</a> on Unsplash.com</p>
+      <p>Icons: <a href="https://www.flaticon.com/free-icons/nature">Nature icons created by Eucalyp - Flaticon</a></p>
+    </section>
+    <section class="page-footer__copyright">
+      <p>&copy; 2024 Paulo Santos</p>
+    </section>
+  </footer>
+</body>
+
 </html>
